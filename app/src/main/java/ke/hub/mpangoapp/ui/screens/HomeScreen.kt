@@ -95,7 +95,7 @@ fun HomeScreen(
                     Spacer(modifier = Modifier.width(12.dp))
                     Column {
                         Text(
-                            text = "Hi, Ellie-May",
+                            text = "Hi there",
                             style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
                             color = Color.White,
                         )
