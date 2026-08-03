@@ -1,12 +1,12 @@
-package ke.hub.mpangoapp.models
+package ke.hub.mpangoapp.models.database
 
 import androidx.room3.Entity
 import androidx.room3.PrimaryKey
 
-@Entity(tableName = "items")
-data class Item(
+@Entity(tableName = "wallets")
+data class Wallet(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val name: String,
-    val description: String,
-    val amount: Double,
+    val balance: Double,
+    val currency: String,
 )
