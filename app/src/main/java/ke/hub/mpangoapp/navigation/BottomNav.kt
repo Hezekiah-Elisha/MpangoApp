@@ -6,7 +6,6 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.navigation3.runtime.NavKey
@@ -42,13 +41,13 @@ fun BottomNav(
                     Icon(
                         painter = painterResource(id = icon),
                         contentDescription = route.label,
-                        tint = if (topLevelBackStack.topLevelKey == route) Color.White else Color.Gray,
+//                        tint = if (topLevelBackStack.topLevelKey == route) Color.White else Color.Gray,
                     )
                 },
                 label = {
                     Text(
                         route.label,
-                        color = if (topLevelBackStack.topLevelKey == route) Color.White else Color.Gray,
+//                        color = if (topLevelBackStack.topLevelKey == route) Color.White else Color.Gray,
                     )
                 },
             )
