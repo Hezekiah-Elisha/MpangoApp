@@ -15,11 +15,11 @@ import ke.hub.mpangoapp.ui.theme.MpangoAppTheme
 
 @Composable
 fun TopCard(modifier: Modifier = Modifier) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-    ) {
+//    Card(
+//        modifier = Modifier.fillMaxWidth(),
+//    ) {
         Column(
-            modifier = Modifier.padding(20.dp),
+            modifier = Modifier.padding(20.dp).fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             Text(
@@ -33,7 +33,7 @@ fun TopCard(modifier: Modifier = Modifier) {
                 fontSize = MaterialTheme.typography.headlineLarge.fontSize
             )
         }
-    }
+//    }
 }
 
 @PreviewLightDark
