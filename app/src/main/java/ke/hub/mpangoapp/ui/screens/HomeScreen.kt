@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import ke.hub.mpangoapp.R
 import ke.hub.mpangoapp.models.Bill
 import ke.hub.mpangoapp.ui.components.BillsItem
+import ke.hub.mpangoapp.ui.components.TopCard
 import ke.hub.mpangoapp.ui.theme.MpangoAppTheme
 
 @Composable
@@ -78,19 +79,7 @@ fun HomeScreen(
                     .padding(innerPadding)
                     .padding(16.dp),
         ) {
-            Column(
-                modifier = Modifier,
-                verticalArrangement = Arrangement.spacedBy(4.dp),
-            ) {
-                Text(
-                    text = "Hello there Planner",
-                    style = MaterialTheme.typography.headlineLarge,
-                )
-                Text(
-                    text = "Lets get you started kwa mpangilio",
-                    style = MaterialTheme.typography.bodyLarge,
-                )
-            }
+            TopCard()
             Column(
                 modifier = Modifier.fillMaxWidth(),
             ) {
